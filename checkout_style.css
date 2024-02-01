@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Apple;
+    src: url(fonts/SF-Pro.ttf);
+}
+
+@font-face {
+    font-family: Apple_Extrabold;
+    src: url(fonts/SF-Pro-Display-Heavy.otf);
+}
+
+@font-face {
+    font-family: Apple_Bold;
+    src: url(fonts/SF-Pro-Display-Bold.otf);
+}
+
+@font-face {
+    font-family: Apple_Semibold;
+    src: url(fonts/SF-Pro-Display-Semibold.otf);
+}
+body{
+    background-color: #F5F5F7;
+}
+img {
+    width: 20px;
+}
+
+#logo {
+    padding: 10px 16px;
+}
+
+nav {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(212, 212, 212);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Apple;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.fa-solid {
+    position: absolute;
+    right: 50px;
+    padding: 13px 16px;
+    color: rgb(212, 212, 212);
+    width: 25px;
+}
+
+section{
+    min-height: 100vh;
+    padding-top: 100px;
+}
+section .desc{
+    margin-left: 10%;
+}
+section .desc .product_name{
+    font-family: Apple_Bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+section .desc .price_cont{
+    font-family: Apple;
+    font-size: 20px;
+}
+
+section .wrapper{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: flex;
+}
+
+section .wrapper .slider{
+    width: 60%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    
+}
+section .wrapper .slider .swiper{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:
+    0px 2px 2.3px rgba(0, 0, 0, 0.047),
+    0px 5px 5.8px rgba(0, 0, 0, 0.067),
+    0px 10.3px 11.9px rgba(0, 0, 0, 0.083),
+    0px 21.2px 24.5px rgba(0, 0, 0, 0.103),
+    0px 58px 67px rgba(0, 0, 0, 0.15);
+}
+
+section .wrapper .slider .swiper .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: grey;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: grey;
+}
+.wrapper .input_details{
+    background-color: F5F5F7;
+    margin-left: 100px;
+    width: 350px;
+}
+.wrapper .input_details .descrip{
+    font-family: Apple_Semibold;
+    font-size: 30px;
+}
+.wrapper .input_details .descrip span{
+    color: #3F3E3E;
+}
+.wrapper .input_details .type{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+}
+.wrapper .input_details .type .first, .second{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid #949393;
+    padding: 10px;
+    cursor: pointer;
+}
+.wrapper .input_details .type .first:hover, .second:hover{
+    border: 1px solid #3F3E3E;
+}
+.wrapper .input_details .type .first .first_type, .second_type{
+    font-family: Apple_Semibold;
+}
+.wrapper .input_details .type .first .first_div .first_desc{
+    font-size: 13px;
+}
+.wrapper .input_details .type .second .second_div .second_desc{
+    font-size: 13px;
+}
+.wrapper .input_details .type .first .first_type span, p{
+    font-family: Apple;
+}
+.wrapper .input_details .type .second .second_type span, p{
+    font-family: Apple;
+}
+.wrapper .input_details .color{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.wrapper .input_details .color .color0, .color1, .color2, .color3{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #dfdfdf;
+    cursor: pointer;
+}
+.wrapper .input_details .color .color0:hover, .color1:hover, .color2:hover, .color3:hover{
+    border: 2px solid #3F3E3E;
+}
+.wrapper .input_details .memory{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+.wrapper .input_details .memory .memory0, .memory1, .memory2{
+    width: 90%;
+    background-color: white;
+    border: 1.5px solid #949393;
+    margin-bottom: 10px;
+    height: 60px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.wrapper .input_details .memory .memory0:hover, .memory1:hover, .memory2:hover{
+    border: 1.5px solid #3f3e3e;
+}
+.wrapper .input_details .memory .memory0 div p, .memory1 div p, .memory2 div p{
+    font-size: 13px;
+}
+.wrapper .input_details .final_amount, .final{
+    font-size: 30px;
+    font-family: Apple_Semibold;
+}
+.wrapper .input_details .checkout{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.wrapper .input_details .checkout .input_money{
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: Apple;
+    border: 2px solid #3f3e3e;
+}
+.wrapper .input_details .checkout button{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #36B1F6;
+    font-size: 20px;
+    color: white;
+    font-family: Apple_Semibold;
+    cursor: pointer;
+    
+
+}
+.wrapper .input_details .checkout button:hover{
+    background-color: #0077ED;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.wrapper .input_details .color_desc, .color_name{
+    font-family: Apple_Semibold;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.wrapper .input_details .color_cont{
+    display: flex;
+}
+.wrapper .input_details .final_cont{
+    display: flex;
+}

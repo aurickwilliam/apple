@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple - Checkout</title>
+    <link rel="icon" href="img/apple_logo.png">
+
+    <!-- links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/fc53451b7a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="checkout_style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    
+</head>
+
+<body>
+    <nav>
+        <a id="logo" href="#logo"><img id="apple_logo" src="img/apple_logo.png"></a>
+
+        <ul>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="#Mac">Mac</a></li>
+            <li><a href="#iPad">iPad</a></li>
+            <li><a href="#iPhone">iPhone</a></li>
+            <li><a href="#Watch">Watch</a></li>
+            <li><a href="#AirPods">AirPods</a></li>
+            <li><a href="#TV&Home">TV & Home</a></li>
+            <li><a href="#Accessories">Accessories</a></li>
+        </ul>
+
+        <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+    </nav>
+
+    <section>
+        <div class="desc">
+            <h1 class="product_name">Buy <span class="name">(name)</span></h1>
+            <p class="price_cont">From ₱<span class="price"></span></p>
+        </div>
+        <div class="wrapper">
+            <div class="slider">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img class="1" src=""></div>
+                        <div class="swiper-slide"><img class="2" src=""></div>
+                        <div class="swiper-slide"><img class="3" src=""></div>
+                        <div class="swiper-slide"><img class="4" src=""></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="input_details">
+                <p class="descrip model_desc">Model. <span>Choose your size and display.</span></p>
+                <div class="type">
+                    <div class="first">
+                        <div class="first_div">
+                            <p class="first_type">hello<br></p>
+                            <p class="first_desc">1</p>
+                        </div>
+                        <p>From ₱ <span class="first_price"></span></p>
+                    </div>
+                    <div class="second">
+                        <div class="second_div">
+                            <p class="second_type">hello<br></p>
+                            <p class="second_desc">1</p>
+                        </div>
+                        <p>From ₱ <span class="second_price"></span></p>
+                    </div>
+                </div>
+                <p class="descrip">Finish. <span>Pick your favorite color.</span></p>
+                <div class="color_cont">
+                    <p class="color_desc">Color -  </p> <p class="color_name"></p>
+                </div>
+                <div class="color">
+                    <div class="color0"></div>
+                    <div class="color1"></div>
+                    <div class="color2"></div>
+                    <div class="color3"></div>
+                </div>
+                <p class="descrip">Storage. <span>Choose how much space you’ll need.</span></p>
+                <div class="memory">
+                    <div class="memory0">
+                        <p class="mem0"></p>
+                        <div>
+                            <p>From ₱</p>
+                            <p class="mem0_price"></p>
+                        </div>
+                    </div>
+                    <div class="memory1">
+                        <p class="mem1"></p>
+                        <div>
+                            <p>From ₱</p>
+                            <p class="mem1_price"></p>
+                        </div>
+                    </div>
+                    <div class="memory2">
+                        <p class="mem2"></p>
+                        <div>
+                            <p>From ₱</p>
+                            <p class="mem2_price"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="final_cont">
+                    <p class="final_amount">From ₱</p>
+                    <p class="final"></p>
+                </div>
+                <div class="checkout">
+                    <input class="input_money" type="number">
+                    <button>Buy</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="checkout_script.js"></script>
+    <script src="./store_script.js"></script>
+</body>
+
+</html>
